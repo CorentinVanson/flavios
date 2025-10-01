@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavios - L'OS pour vos caisses d'encaissement</title>
+    <style>
+        /* --- Réinitialisation et Polices --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --primary-blue: #2C3E50;
+            --secondary-gray: #34495E;
+            --accent-green: #18BC9C;
+            --light-gray: #ECF0F1;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--secondary-gray);
+            background-color: var(--white);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Header & Navigation --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            color: var(--secondary-gray);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        
+        .cta-button {
+            background-color: var(--accent-green);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #15a589;
+        }
+
+        /* --- Section Héros --- */
+        .hero {
+            background-color: var(--light-gray);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* --- Section Problèmes --- */
+        #problem {
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        #problem h2 {
+            font-size: 2.5rem;
+        }
+        
+        /* --- Section Fonctionnalités --- */
+        #features {
+            background-color: var(--light-gray);
+        }
+        
+        #features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .feature-item .icon {
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* --- Section Contact --- */
+        #contact {
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-form input {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Pour la simplicité, on cache les liens sur mobile */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="./images/logo-flavios.png" alt="Logo Flavios">
+                    <span>Flavios</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Fonctionnalités</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="#contact" class="cta-button">Demander une démo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Flavios : L'OS qui garantit la fiabilité de vos points de vente.</h1>
+                <p>Ne laissez plus un système d'encaissement lent, instable ou vulnérable freiner votre activité. Flavios est le système d'exploitation conçu pour assurer une performance et une sécurité à toute épreuve à vos caisses.</p>
+                <a href="#contact" class="cta-button">Obtenir une démonstration</a>
+            </div>
+        </section>
+
+        <section id="problem">
+            <div class="container">
+                <h2>Votre caisse est le cœur de votre métier. Est-elle en bonne santé ?</h2>
+                <p>Lenteurs aux heures de pointe, redémarrages inattendus, failles de sécurité, mises à jour complexes... <br>Les systèmes d'encaissement traditionnels sont souvent une source de stress et de perte de revenus. Il est temps de passer à une solution conçue pour la performance.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Le socle de confiance pour votre business.</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="icon">⚡️</div>
+                        <h3>Stabilité Exceptionnelle</h3>
+                        <p>Construit sur un noyau optimisé, Flavios élimine les plantages. Vos transactions sont rapides et fluides, même pendant les pics d'activité.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🛡️</div>
+                        <h3>Sécurité Renforcée</h3>
+                        <p>Protégez vos données et celles de vos clients. Flavios est un système durci, spécifiquement pensé pour parer aux menaces visant les terminaux de paiement.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🚀</div>
+                        <h3>Performances Optimisées</h3>
+                        <p>Démarrage quasi instantané et interface réactive. Offrez à vos équipes un outil de travail qu'ils aimeront utiliser.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🔌</div>
+                        <h3>Compatibilité Universelle</h3>
+                        <p>Flavios s'intègre parfaitement avec votre matériel existant (imprimantes, scanners, TPE) et vos logiciels de gestion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Prêt à redonner de la puissance à vos caisses ?</h2>
+                <p>Notre équipe est à votre disposition pour une démonstration personnalisée et sans engagement.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nom de votre entreprise" required>
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Adresse e-mail" required>
+                    <button type="submit" class="cta-button">Envoyer ma demande de démo</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Flavios. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
